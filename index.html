@@ -1,0 +1,97 @@
+<!-- Theres no purpose for this site, just stuff written as it was learnt-->
+
+<!DOCTYPE html>                                     <!--Defines type of document to the browser-->
+
+<html>                                              <!--Start of the html document-->
+
+
+    <head>                                          <!--Start of head, describes meta stuff, not to be shown as the page-->
+
+        <meta charset="utf-8">                      <!--Defines the character set to be used, i.e ASCII or UTF-8 in this case-->
+        <title>My First Webpage</title>             <!--Sets the title of the page, shown in search engines and the tab name-->
+
+    </head>                                         <!--End of head-->
+
+
+    <body>                                          <!--Start of body, content to be actually shown in the page-->
+
+        <h1>Hello World!</h1>                       <!--This and the following headers serve as titles and subtitles for the-->
+        <h1>This is an h1</h1>                      <!--page. They decrease in size as the number increases from 1 -> 6.-->
+        <h2>This is an h2</h2>                      <!--HAS MEANING AND CONTEXT!! DO NOT USE JUST FOR LOOKS-->
+        <h3>This is an h3</h3>
+        <h4>This is an h4</h4>
+        <h5>This is an h5</h5>
+        <h6>This is an h6</h6>
+
+        This is just plain text                     <!--Text w/o tags is displayed as is, usecase is unknown, <p> seems better-->
+        <p>This is a paragraph</p>                  <!--Paragraphs serve the text to be displayed, each element starts -->
+        <p>This is another one</p>                  <!--a new paragraph. Standard way of presenting text??-->
+        
+        
+        <strong>This is important text</strong>     <!--Denotes important text and has a special meaning for -->
+                                                    <!--screen readers, browsers and search engines. Usually shown as bold, but-->
+                                                    <!--DO NOT USE JUST FOR BOLD!! It actually defines context and meaning.-->
+        <p>                                         
+            This is                                 <!--Strong text(important) can be nested within paragraphs. IDK if its better-->
+            <strong>                                <!--practice to nest all strong text within paragraphs, only nest it when its-->
+                important text                      <!--between standard text, or always have it be its own element.-->
+            </strong>                               <!--DO NOT USE JUST FOR BOLD!! It actually defines context and meaning.-->
+            within a paragraph
+        </p>
+
+        <em>This is stress emphasized text</em>     <!--Denotes text to be emphasized, it DEFINES CONTEXT AND MEANING!.-->
+                                                    <!--Shown as italics, DO NOT USE FOR ITALICS ALONE!! It has a special meaning-->
+        <p>                                         <!--for screen readers, browsers and search engines. -->
+            This is                                 <!--What is the best practice? Nesting or stand-alone elements?-->
+            <em>                                    
+                stress emphasized
+            </em>
+            within a paragraph
+        </p>
+
+        <!-- 02_blogProject happened here. -->
+
+        <ul>                                        <!--Unordered list. List items with bullet points, not numbered. Items shown-->
+                                                    <!--in order of introduction it seems though.-->
+            <li>Unordered list item 1</li>                    <!--List item-->
+            <li>Unordered list item 2</li>
+
+        </ul>
+
+        <ol>                                        <!--Ordered list. Items enumerated by order of appearance. ul and ol lists-->
+                                                    <!--should be swappable by chaging the "o" and the "u".-->
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+
+        </ol>
+
+        <ol>  
+                                                  <!--Lists can be nested too!-->
+            <li>First item</li>
+
+            <li>Second item, with sublist:        <!--It is NESTED, so the <li> tags surround the sublist's tags.-->
+                <ul>
+                    <li>1st subitem</li>
+                    <li>2nd subitem</li>
+            </ul></li>
+
+           <li>Third item with double nested list:
+               <ul>
+                   <li>1st subitem with sublist:
+                        <ul>
+                           <li>Hi!</li>
+                           <li>Bye!</li>
+            </ul></li></ul></li>                <!--BAD PRACTICE! Or IDK, this makes adding new stuff in between somewhat more-->
+                                                <!--cumbersome, but I'm not adding any more stuff and this makes it slimmer.-->
+        </ol>
+
+        <!-- 03_listsProject happened here. -->
+        <!-- 04_ODINlinks&images happened here. -->
+
+        <a>This anchor references no links.</a> <!--Anchors without references appear as plain text.-->
+        <a href="https://www.google.com/">      <!--FIRST INTRODUCTION OF ATTRIBUTES!! href links to other content. It also-->
+            This anchor references Google!      <!--seems that anchors dont create a new line.-->
+        </a>                                    <!--This is an absolute link.-->
+        
+    </body>
+</html>
